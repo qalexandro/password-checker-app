@@ -1,0 +1,24 @@
+<div class="main-container">
+  <h2 class="main-container-title">Type your password</h2>
+  <input
+    type="password"
+    [(ngModel)]="inputValue"
+    class="main-container-input"
+    placeholder="Type something"
+  />
+  <p class="main-container-description">
+    Password security level:
+    <span
+      [ngStyle]="{
+        color:
+          passwordChecker(inputValue) === 'Weak'
+            ? 'red'
+            : passwordChecker(inputValue) === 'Moderate'
+            ? 'yellow'
+            : 'green'
+      }"
+    >
+      {{ passwordChecker(inputValue) }}
+    </span>
+  </p>
+</div>

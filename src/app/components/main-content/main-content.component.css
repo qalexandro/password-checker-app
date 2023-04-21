@@ -1,0 +1,29 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container-title {
+  margin: auto;
+  padding: 1rem;
+}
+
+.main-container-input {
+  margin: auto;
+  padding: 0.5rem;
+  width: 200px;
+}
+
+.main-container-description {
+  margin: auto;
+  padding: 1rem;
+}
+
+input {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
